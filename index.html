@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-
-```
+<!DOCTYPE html> <html lang="es"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Mi Página Web</title>
 <style>
     * {
         margin: 0;
@@ -123,14 +115,77 @@
         color: #cbd5e1;
     }
 
+    /* FOOTER */
+
     footer {
         text-align: center;
-        padding: 25px;
+        padding: 35px 20px;
         background: #020617;
         color: #94a3b8;
     }
 
+    footer h3 {
+        color: #38bdf8;
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .estudiantes {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto 30px;
+    }
+
+    .estudiante {
+        background: #1e293b;
+        padding: 20px;
+        width: 210px;
+        border-radius: 12px;
+        border: 1px solid #334155;
+        transition: 0.3s;
+    }
+
+    .estudiante:hover {
+        transform: translateY(-5px);
+        border-color: #38bdf8;
+    }
+
+    .estudiante .nombre {
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .estudiante .curso {
+        color: #94a3b8;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .estudiante a {
+        color: #38bdf8;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .estudiante a:hover {
+        color: #0ea5e9;
+        text-decoration: underline;
+    }
+
+    .copyright {
+        border-top: 1px solid #1e293b;
+        padding-top: 20px;
+        font-size: 14px;
+    }
+
     @media (max-width: 600px) {
+
         .hero h1 {
             font-size: 40px;
         }
@@ -138,16 +193,17 @@
         nav {
             display: none;
         }
+
+        .estudiante {
+            width: 100%;
+            max-width: 280px;
+        }
     }
 </style>
-```
 
-</head>
-
-<body>
-
-```
+</head> <body>
 <header>
+
     <div class="logo">MiWeb</div>
 
     <nav>
@@ -155,51 +211,142 @@
         <a href="#servicios">Servicios</a>
         <a href="#contacto">Contacto</a>
     </nav>
+
 </header>
 
+
 <section class="hero" id="inicio">
+
     <div>
+
         <h1>Bienvenido a <span>Mi Página</span></h1>
-        <p>Una página web creada con HTML y CSS.</p>
-        <a href="#servicios" class="boton">Ver más</a>
+
+        <p>
+            Una página web creada con HTML y CSS.
+        </p>
+
+        <a href="#servicios" class="boton">
+            Ver más
+        </a>
+
     </div>
+
 </section>
 
+
 <section class="seccion" id="servicios">
+
     <h2>¿Qué ofrecemos?</h2>
 
     <div class="tarjetas">
 
         <div class="tarjeta">
+
             <h3>Diseño</h3>
-            <p>Diseños modernos, simples y adaptados a cualquier dispositivo.</p>
+
+            <p>
+                Diseños modernos, simples y adaptados
+                a cualquier dispositivo.
+            </p>
+
         </div>
 
+
         <div class="tarjeta">
+
             <h3>Desarrollo</h3>
-            <p>Páginas rápidas y funcionales utilizando tecnologías web.</p>
+
+            <p>
+                Páginas rápidas y funcionales utilizando
+                tecnologías web.
+            </p>
+
         </div>
 
+
         <div class="tarjeta">
+
             <h3>Soporte</h3>
-            <p>Ayuda para mantener y mejorar tu página web.</p>
+
+            <p>
+                Ayuda para mantener y mejorar
+                tu página web.
+            </p>
+
         </div>
 
     </div>
+
 </section>
+
 
 <section class="seccion" id="contacto">
+
     <h2>Contacto</h2>
-    <p>¿Quieres trabajar conmigo? Escríbeme.</p>
+
+    <p>
+        ¿Quieres trabajar conmigo? Escríbeme.
+    </p>
+
     <br>
-    <a href="mailto:tuemail@gmail.com" class="boton">Contactarme</a>
+
+    <a href="mailto:tuemail@gmail.com" class="boton">
+        Contactarme
+    </a>
+
 </section>
 
-<footer>
-    © 2026 MiWeb - Todos los derechos reservados
-</footer>
-```
 
-</body>
-</html>
+<footer>
+
+    <h3>Desarrollado por</h3>
+
+    <div class="estudiantes">
+
+        <div class="estudiante">
+
+            <p class="nombre">
+                Micaela Insfran
+            </p>
+
+            <p class="curso">
+                6°B
+            </p>
+
+            <a href="https://github.com/USUARIO-GITHUB-1" target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+
+        <div class="estudiante">
+
+            <p class="nombre">
+                Sofia Chernopoloff
+            </p>
+
+            <p class="curso">
+                6°B
+            </p>
+
+            <a href="https://github.com/USUARIO-GITHUB-2" target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 MiWeb - Todos los derechos reservados
+
+    </div>
+
+</footer>
+
+</body> </html>
 
