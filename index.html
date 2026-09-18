@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+
+```
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #0f172a;
+        color: white;
+    }
+
+    header {
+        background: #1e293b;
+        padding: 20px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #38bdf8;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+    }
+
+    nav a:hover {
+        color: #38bdf8;
+    }
+
+    .hero {
+        min-height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+        color: #38bdf8;
+    }
+
+    .hero p {
+        font-size: 20px;
+        color: #cbd5e1;
+        margin-bottom: 30px;
+    }
+
+    .boton {
+        display: inline-block;
+        background: #38bdf8;
+        color: #0f172a;
+        padding: 14px 30px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .boton:hover {
+        background: #0ea5e9;
+        transform: scale(1.05);
+    }
+
+    .seccion {
+        padding: 70px 8%;
+        text-align: center;
+        background: #111827;
+    }
+
+    .seccion h2 {
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+
+    .tarjetas {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .tarjeta {
+        background: #1e293b;
+        padding: 30px;
+        width: 280px;
+        border-radius: 15px;
+        transition: 0.3s;
+    }
+
+    .tarjeta:hover {
+        transform: translateY(-8px);
+    }
+
+    .tarjeta h3 {
+        color: #38bdf8;
+        margin-bottom: 15px;
+    }
+
+    .tarjeta p {
+        color: #cbd5e1;
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px;
+        background: #020617;
+        color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        nav {
+            display: none;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<header>
+    <div class="logo">MiWeb</div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div>
+        <h1>Bienvenido a <span>Mi Página</span></h1>
+        <p>Una página web creada con HTML y CSS.</p>
+        <a href="#servicios" class="boton">Ver más</a>
+    </div>
+</section>
+
+<section class="seccion" id="servicios">
+    <h2>¿Qué ofrecemos?</h2>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <h3>Diseño</h3>
+            <p>Diseños modernos, simples y adaptados a cualquier dispositivo.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Desarrollo</h3>
+            <p>Páginas rápidas y funcionales utilizando tecnologías web.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Soporte</h3>
+            <p>Ayuda para mantener y mejorar tu página web.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="seccion" id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Quieres trabajar conmigo? Escríbeme.</p>
+    <br>
+    <a href="mailto:tuemail@gmail.com" class="boton">Contactarme</a>
+</section>
+
+<footer>
+    © 2026 MiWeb - Todos los derechos reservados
+</footer>
+```
+
+</body>
+</html>
 
